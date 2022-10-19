@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/style.min.css?_v=20221019100220" />
+  <link rel="stylesheet" href="css/style.min.css?_v=20221019154621" />
   <link
     rel="apple-touch-icon"
     sizes="180x180"
@@ -22,7 +22,7 @@
     sizes="16x16"
     href="img/favicon_io/favicon-16x16.png"
   />
-  <script src="https://use.fontawesome.com/c877f71299.js?_v=20221019100220"></script>
+  <script src="https://use.fontawesome.com/c877f71299.js?_v=20221019154621"></script>
   <title>Петровский отель</title>
 </head>
 
@@ -37,10 +37,10 @@
 
       <nav class="header__menu col-6 col-sm-6 col-md-1 col-lg-8 col-xxl-7">
         <ul class="menu__links">
-          <li><a href="">НОМЕРА</a></li>
-          <li><a href="">УСЛУГИ</a></li>
-          <li><a href="">ФОТОГАЛЕРЕЯ</a></li>
-          <li><a href="">ОТЗЫВЫ</a></li>
+          <li><a href="#numbers">НОМЕРА</a></li>
+          <li><a href="#fitness">УСЛУГИ</a></li>
+          <li><a href="#gallery">ФОТОГАЛЕРЕЯ</a></li>
+          <li><a href="#reviews">ОТЗЫВЫ</a></li>
           <li>
             <a href="tel:+74959986967">
               <i class="fa fa-sharp fa-solid fa-phone"></i>+7 (495) 998-69-67</a
@@ -126,7 +126,7 @@
           </div>
         </div>
         <!-- suggestions ============= -->
-        <div class="suggestions">
+        <div class="suggestions" id="abouts">
           <div class="container-xxl">
             <div class="suggestions__item row">
               <div class="suggestions__elements col-sm-6">
@@ -190,7 +190,7 @@
               </div>
               <div class="about__title">
                 <div class="title__item">
-                  <h2>О НАС</h2>
+                  <h2 class="title__h2">О НАС</h2>
                   <div class="title__border"></div>
                 </div>
                 <div class="title__text">
@@ -212,10 +212,10 @@
         </div>
 
         <!-- numbers ============= -->
-        <div class="main__numbers">
+        <div class="main__numbers" id="numbers">
           <div class="container-xxl">
             <div class="numbers__title">
-              <h2>НОМЕРНОЙ ФОНД</h2>
+              <h2 class="title__h2">НОМЕРНОЙ ФОНД</h2>
             </div>
             <div class="row number__row">
               <div class="numbers__item">
@@ -280,12 +280,12 @@
           </div>
         </div>
         <!-- fitness and spa ============= -->
-        <div class="main__fitness">
+        <div class="main__fitness" id="fitness">
           <div class="container-xxl">
             <div class="fitness__row">
               <div class="fitness__title">
                 <div class="fitness__item">
-                  <h2>ФИТНЕС ЗАЛ И SPA</h2>
+                  <h2 class="title__h2">ФИТНЕС ЗАЛ И SPA</h2>
                   <div class="fitness__border"></div>
                 </div>
                 <div class="fitness__text">
@@ -308,7 +308,7 @@
               </div>
             </div>
             <!-- services ================== -->
-            <div class="services__row row">
+            <div class="services__row row" id="services">
               <div class="services__item">
                 <div class="services__spa">
                   <div class="spa__item">
@@ -377,11 +377,11 @@
           </div>
         </div>
         <!-- gallery ============= -->
-        <div class="main__gallery">
+        <div class="main__gallery" id="gallery">
           <div class="container-xxl">
             <div class="gallery__numbers row">
               <div class="gallery__title">
-                <h3>ФОТОГАЛЕРЕЯ</h3>
+                <h2 class="title__h2">ФОТОГАЛЕРЕЯ</h2>
                 <p>НОМЕРА</p>
               </div>
               <div class="gallery__img">
@@ -425,12 +425,12 @@
         </div>
 
         <!-- slider reviews ============= -->
-        <div class="main__slider">
+        <div class="main__slider" id="reviews">
           <div class="container-xxl">
             <div class="slider__item">
               <div class="slider__title">
                 <div class="title__item-slider">
-                  <h3>ОТЗЫВЫ</h3>
+                  <h2 class="title__h2">ОТЗЫВЫ</h2>
                 </div>
                 <div>
                   <button class="btn title__btn" type="submit">
@@ -522,16 +522,16 @@
         </div>
         <div class="footer__links">
           <ul>
-            <li><a href="">О НАС</a></li>
-            <li><a href=""> НОМЕРА</a></li>
-            <li><a href=""> УСЛУГИ</a></li>
+            <li><a href="#abouts">О НАС</a></li>
+            <li><a href="#numbers">НОМЕРА</a></li>
+            <li><a href="#services">УСЛУГИ</a></li>
           </ul>
         </div>
         <div class="footer__links">
           <ul>
-            <li><a href="">ФИТНЕС ЗАЛ И SPA </a></li>
-            <li><a href="">ОТЗЫВЫ </a></li>
-            <li><a href="">ФОТОГАЛЕРЕЯ </a></li>
+            <li><a href="#fitness">ФИТНЕС ЗАЛ И SPA </a></li>
+            <li><a href="#reviews">ОТЗЫВЫ </a></li>
+            <li><a href="#gallery">ФОТОГАЛЕРЕЯ </a></li>
           </ul>
         </div>
         <div class="footer__address">
@@ -556,6 +556,6 @@
 </footer>
 
     </div>
-    <script src="js/app.min.js?_v=20221019100220"></script>
+    <script src="js/app.min.js?_v=20221019154621"></script>
   </body>
 </html>
