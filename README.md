@@ -1,2 +1,3 @@
 # Hotel-Petrovsky
-pet-project
+pet project.
+design project by Victoria Chernyavskaya
