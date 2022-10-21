@@ -119,10 +119,6 @@ body {
   overflow-x: hidden;
 }
 
-body::-webkit-scrollbar {
-  width: 0;
-}
-
 .title__h2 {
   font-size: 33px;
 }
@@ -782,7 +778,7 @@ body::-webkit-scrollbar {
 
 .footer {
   background-color: #384249;
-  padding: 60px 0;
+  padding: 40px 0;
 }
 
 .footer__item {
@@ -801,6 +797,10 @@ body::-webkit-scrollbar {
 
 .footer__item > div {
   margin: 0 20px 20px 0;
+}
+
+.footer__item > div:last-child {
+  margin: 0;
 }
 
 .footer__logo {
@@ -822,7 +822,7 @@ body::-webkit-scrollbar {
 }
 
 .footer__links li {
-  font-size: 18px;
+  font-size: 14px;
   margin-bottom: 20px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -970,6 +970,10 @@ a,
     font-size: 22px;
   }
 
+  .title__item-slider {
+    margin-bottom: 0;
+  }
+
   .main__slider {
     padding: 150px 0;
   }
@@ -997,6 +1001,14 @@ a,
   .swiper-pagination-bullet {
     width: 16px;
     height: 16px;
+  }
+
+  .footer {
+    padding: 60px 0;
+  }
+
+  .footer__links li {
+    font-size: 18px;
   }
 }
 
