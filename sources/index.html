@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { "title":"Петровский отель" })
+  <body>
+    <div class="wrapper">
+      @@include('html/header.html', {})
+      <main>
+        <div class="main__wrapper">
+          <!-- header background ============= -->
+          <div class="container__img">
+            <div class="container-xxl">
+              <div class="main__img">
+                <div class="img__title">
+                  <h1>ВЫ В ЦЕНТРЕ СОБЫТИЙ!</h1>
+                  <div></div>
+                  <p>
+                    Изысканные комфортабельные номера 4
+                    <i class="fa fa-sharp fa-solid fa-star"></i> в историческом
+                    центре Москвы
+                  </p>
+                </div>
+
+                <div class="img__block">
+                  <img src="@img/head_wallpaper.jpg" alt="" />
+
+                  <!-- booking ============= -->
+                  <div class="booking__item">
+                    <form class="form__row">
+                      <fieldset class="form__item">
+                        <p>Заезд</p>
+                        <input
+                          type="date"
+                          name="calendar"
+                          value="2022-10-01"
+                          max="2023-09-30"
+                          min="2022-10-01"
+                        />
+                      </fieldset>
+
+                      <fieldset class="form__item">
+                        <p>Выезд</p>
+                        <input
+                          type="date"
+                          name="calendar"
+                          value="2022-10-01"
+                          max="2023-09-30"
+                          min="2022-10-01"
+                        />
+                      </fieldset>
+
+                      <fieldset class="form__item">
+                        <p>Число гостей</p>
+                        <select>
+                          <option>1</option>
+                          <option selected>2</option>
+                          <option>3</option>
+                          <option>4</option>
+                          <option>5</option>
+                          <option>6</option>
+                        </select>
+                      </fieldset>
+
+                      <fieldset class="form__item">
+                        <button class="btn main__btn" type="submit">
+                          ЗАБРОНИРОВАТЬ
+                        </button>
+                      </fieldset>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- suggestions ============= -->
+        <div class="suggestions" id="abouts">
+          <div class="container-xxl">
+            <div class="suggestions__item row">
+              <div class="suggestions__elements col-sm-6">
+                <div class="suggestions__img">
+                  <img src="@img/icon/armchair.svg" alt="" />
+                </div>
+                <div class="suggestions__text">
+                  <p>Стильный интерьер</p>
+                </div>
+              </div>
+              <div class="suggestions__elements col-sm-6">
+                <div class="suggestions__img">
+                  <img src="@img/icon/medal.svg" alt="" />
+                </div>
+                <div class="suggestions__text">
+                  <p>Высокий уровень обслуживания</p>
+                </div>
+              </div>
+              <div class="suggestions__elements col-sm-6">
+                <div class="suggestions__img">
+                  <img src="@img/icon/kupola.svg" alt="" />
+                </div>
+                <div class="suggestions__text">
+                  <p>Исторический центр Москвы</p>
+                </div>
+              </div>
+              <div class="suggestions__elements col-sm-6">
+                <div class="suggestions__img">
+                  <img src="@img/icon/egg-and-bacon.svg" alt="" />
+                </div>
+                <div class="suggestions__text">
+                  <p>Вкусные разнообразные завтраки</p>
+                </div>
+              </div>
+              <div class="suggestions__elements col-sm-6">
+                <div class="suggestions__img">
+                  <img src="@img/icon/sale.svg" alt="" />
+                </div>
+                <div class="suggestions__text">
+                  <p>Скидки и подарки постояльцам</p>
+                </div>
+              </div>
+              <div class="suggestions__elements col-sm-6">
+                <div class="suggestions__img">
+                  <img src="@img/icon/parking.svg" alt="" />
+                </div>
+                <div class="suggestions__text">
+                  <p>Бесплатная парковка</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- about us ============= -->
+        <div class="about__wrapper">
+          <div class="container-xxl">
+            <div class="about__main">
+              <div class="about__img">
+                <img src="@img/chair.jpg" alt="" />
+              </div>
+              <div class="about__title">
+                <div class="title__item">
+                  <h2 class="title__h2">О НАС</h2>
+                  <div class="title__border"></div>
+                </div>
+                <div class="title__text">
+                  <p>
+                    Комфортабельный бутик-отель 4
+                    <i class="fa fa-sharp fa-solid fa-star"></i> рад открыть
+                    двери перед своими гостями.
+                  </p>
+                  <p>
+                    Если вы хотите с комфортом отдохнуть во время поездки,
+                    организовать важную встречу или яркий праздник, расслабиться
+                    в SPA-салоне и провести тренировку в нашем фитнес-зале, мы с
+                    радостью будем ждать вас!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- numbers ============= -->
+        <div class="main__numbers" id="numbers">
+          <div class="container-xxl">
+            <div class="numbers__title">
+              <h2 class="title__h2">НОМЕРНОЙ ФОНД</h2>
+            </div>
+            <div class="row number__row">
+              <div class="numbers__item">
+                <div class="number__img">
+                  <img src="@img/standart.jpg" alt="" />
+                </div>
+                <div class="number__text">
+                  <h3>Стандарт</h3>
+                  <p>
+                    Небольшой уютный номер с рабочей зоной и двуспальной
+                    кроватью. В каждом номере: ТВ, кондиционер, мини-бар, сейф,
+                    письменный стол, ванная комната с душем и необходимыми
+                    гигиеническими принадлежностями, фен для волос. Всем гостям
+                    отеля предоставляются тапочки и халат
+                  </p>
+                  <p class="text__price">От 3 999 р./сутки</p>
+                </div>
+                <button class="btn main__btn" type="submit">
+                  ЗАБРОНИРОВАТЬ
+                </button>
+              </div>
+
+              <div class="numbers__item">
+                <div class="number__img">
+                  <img src="@img/business.jpg" alt="" />
+                </div>
+                <div class="number__text">
+                  <h3>Бизнес</h3>
+                  <p>
+                    Номер из двух комнат (спальня и рабочий кабинет). В каждом
+                    номере: двуспальная кровать, ТВ, кондиционер, мини-бар,
+                    сейф, ванная комната с душем и необходимыми гигиеническими
+                    принадлежностями, фен для волос. Всем гостям отеля
+                    предоставляются тапочки и халат
+                  </p>
+                  <p class="text__price">От 5 999 р./сутки</p>
+                </div>
+                <button class="btn main__btn" type="submit">
+                  ЗАБРОНИРОВАТЬ
+                </button>
+              </div>
+              <div class="numbers__item">
+                <div class="number__img">
+                  <img src="@img/exclusive.jpg" alt="" />
+                </div>
+                <div class="number__text">
+                  <h3>Эксклюзив</h3>
+                  <p>
+                    Номер из двух комнат (спальня и рабочий кабинет) с верандой.
+                    В каждом номере: двуспальная кровать, ТВ, кондиционер,
+                    мини-бар, сейф, ванная комната с душем и необходимыми
+                    гигиеническими принадлежностями, фен для волос. Всем гостям
+                    отеля предоставляются тапочки и халат
+                  </p>
+                  <p class="text__price">От 7 999 р./сутки</p>
+                </div>
+                <button class="btn main__btn" type="submit">
+                  ЗАБРОНИРОВАТЬ
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- fitness and spa ============= -->
+        <div class="main__fitness" id="fitness">
+          <div class="container-xxl">
+            <div class="fitness__row">
+              <div class="fitness__title">
+                <div class="fitness__item">
+                  <h2 class="title__h2">ФИТНЕС ЗАЛ И SPA</h2>
+                  <div class="fitness__border"></div>
+                </div>
+                <div class="fitness__text">
+                  <p>
+                    Когда суета мегаполиса и тяжелые рабочие будни изрядно
+                    надоели, каждый мечтает об отдыхе, который восстановил бы
+                    наши силы, подарил эмоциональное равновесие и спокойствие.
+                  </p>
+                  <p>
+                    Позвольте себе расслабиться и вырваться из рутины хотя бы на
+                    денек: наш SPA-комплекс и тренажерный зал - это современное
+                    оборудование, квалифицированные опытные сотрудники,
+                    специальные методики и выгодные предложения для наших
+                    клиентов.
+                  </p>
+                </div>
+              </div>
+              <div class="fitness__img">
+                <img src="@img/pool.jpg" alt="" />
+              </div>
+            </div>
+            <!-- services ================== -->
+            <div class="services__row row" id="services">
+              <div class="services__item">
+                <div class="services__spa">
+                  <div class="spa__item">
+                    <div class="services__title">
+                      <h3>SPA УСЛУГИ</h3>
+                    </div>
+                    <div class="services__text">
+                      <p>Традиционный тайский массаж</p>
+                      <span>(90 минут, 5 000 р.)</span>
+                      <p>Масляный массаж</p>
+                      <span>(60 минут, 4 500 р.)</span>
+                      <p>Экспресс-уход за лицом и телом</p>
+                      <span>(от 2 000 р. за сеанс)</span>
+                    </div>
+                  </div>
+                  <button class="btn services__btn" type="submit">
+                    ПОДРОБНЕЕ
+                  </button>
+                </div>
+
+                <div class="services__spa">
+                  <div class="spa__item">
+                    <div class="services__title">
+                      <h3>БАНИ И САУНЫ</h3>
+                    </div>
+                    <div class="services__text">
+                      <p>Русская баня</p>
+                      <span>(1 час, 1500 р.)</span>
+                      <p>Финская сауна</p>
+                      <span>(1 час, 1700 р.)</span>
+                      <p>Турецкий хамам</p>
+                      <span>(1 час, 2000 р.)</span>
+                      <p>Японское офуро</p>
+                      <span>(1 час, 3500 р.)</span>
+                    </div>
+                  </div>
+                  <button class="btn services__btn" type="submit">
+                    ПОДРОБНЕЕ
+                  </button>
+                </div>
+
+                <div class="services__spa">
+                  <div class="spa__item">
+                    <div class="services__title">
+                      <h3>ФИТНЕС ЗАЛ</h3>
+                    </div>
+                    <div class="services__text">
+                      <p>Бассейин (50м)</p>
+                      <span>(1 час, 2000 р.)</span>
+                      <p>Йога</p>
+                      <span>(1000 р. за занятие)</span>
+                      <p>Тренажерный зал</p>
+                      <span>(1 час, 1500 р.)</span>
+                      <p>Кардиозона</p>
+                      <span>(30 минут, 1000 р.)</span>
+                      <p>Зал восточных единоборств</p>
+                      <span>(1500 р. за занятие)</span>
+                    </div>
+                  </div>
+                  <button class="btn services__btn" type="submit">
+                    ПОДРОБНЕЕ
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- gallery ============= -->
+        <div class="main__gallery" id="gallery">
+          <div class="container-xxl">
+            <div class="gallery__numbers row">
+              <div class="gallery__title">
+                <h2 class="title__h2">ФОТОГАЛЕРЕЯ</h2>
+                <p>НОМЕРА</p>
+              </div>
+              <div class="gallery__img">
+                <div class="img__item">
+                  <img src="@img/gallery/room_1.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/room_2.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/room_3.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="gallery__spa row">
+              <div class="gallery__title">
+                <p>SPA И ФИТНЕС ЗАЛ</p>
+              </div>
+              <div class="gallery__img">
+                <div class="img__item">
+                  <img src="@img/gallery/spa/spa_1.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/spa/spa_2.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/spa/spa_3.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/spa/fitness_4.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/spa/woman_5.jpg" alt="" />
+                </div>
+                <div class="img__item">
+                  <img src="@img/gallery/spa/pool_6.jpg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- slider reviews ============= -->
+        <div class="main__slider" id="reviews">
+          <div class="container-xxl">
+            <div class="slider__item">
+              <div class="slider__title">
+                <div class="title__item-slider">
+                  <h2 class="title__h2">ОТЗЫВЫ</h2>
+                </div>
+                <div>
+                  <button class="btn title__btn" type="submit">
+                    ОСТАВИТЬ ОТЗЫВ
+                  </button>
+                </div>
+              </div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="slider__block">
+                      <p>
+                        Часто езжу по работе в командировку в Москву, иногда на
+                        пару дней, иногда на неделю-две. Долго искала
+                        оптимальное место в центре столицы, чтобы и кормили
+                        вкусно, и бассейн был, и качество сервиса на высоте. И
+                        вот я нашла свой идеал! Спасибо всем сотрудникам отеля!
+                      </p>
+                      <span> Елена, 32 года, бизнесмен, 18.08.2021 </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__block">
+                      <p>
+                        Шикарное место для проведения переговоров и
+                        бизнес-конференций с нашими партнерами из Европы. Всегда
+                        чисто, уютно, тихо, что способствует принятию правильных
+                        деловых решений. Вкусно кормят, всегда какая-то
+                        «изюминка» от шеф-повара.
+                      </p>
+                      <span>
+                        Степан, 50 лет, директор компании, 07.08.2021
+                      </span>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="slider__block">
+                      <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Ullam eius dolores delectus perspiciatis eaque hic
+                        numquam aut magnam exercitationem tenetur minima porro a
+                        explicabo nesciunt, alias fugit impedit maxime facere
+                        aspernatur fuga totam quos nam accusamus repellendus.
+                        Distinctio ullam itaque excepturi hic illum repellat
+                        iure iusto cum! Doloremque, aliquam facilis.
+                      </p>
+                      <span> Lorem ipsum dolor sit., 18.08.2021 </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- maps ============= -->
+        <div class="main__maps">
+          <div class="container-xxl">
+            <div class="maps__item">
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A4a30c644d01530d2814dea9260e804f2ddf38a1959d7d66f195740dd5c278896&amp;source=constructor"
+                width="100%"
+                height="501"
+                frameborder="0"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('html/footer.html', {})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
